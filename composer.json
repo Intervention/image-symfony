@@ -1,0 +1,33 @@
+{
+    "name": "intervention/image-symfony",
+    "type": "symfony-bundle",
+    "description": "Symfony Integration of Intervention Image",
+    "homepage": "https://image.intervention.io",
+    "keywords": [
+        "symfony",
+        "image",
+        "gd",
+        "imagick",
+        "watermark",
+        "thumbnail",
+        "resize"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oliver Vogel",
+            "email": "oliver@intervention.io",
+            "homepage": "https://intervention.io/"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "intervention/image": "^3.5",
+        "symfony/framework-bundle": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Intervention\\Image\\Symfony\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+services:
+  Intervention\Image\ImageManager:
+    class: Intervention\Image\ImageManager
+    autoconfigure: true
+    autowire: true
+    arguments:
+      $driver: '%intervention_image.driver%'
