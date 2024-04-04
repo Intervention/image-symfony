@@ -77,6 +77,8 @@ Read the [official documentation of Intervention Image](https://image.interventi
 
 This library is developed and maintained by [Oliver Vogel](https://intervention.io)
 
+Thanks to the community of [contributors](https://github.com/Intervention/image-symfony/graphs/contributors) who have helped to improve this project.
+
 ## License
 
 Intervention Image Symfony is licensed under the [MIT License](LICENSE).
