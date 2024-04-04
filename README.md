@@ -5,7 +5,7 @@
 [![Monthly Downloads](https://img.shields.io/packagist/dm/intervention/image-symfony.svg)](https://packagist.org/packages/intervention/image-symfony/stats)
 
 This package provides an integration to setup [Intervention
-Image](https://image.intervention.io) easily to your Symfony framework
+Image](https://image.intervention.io) easily to your [Symfony](https://symfony.com) framework
 application. Although the use of this integration library is not absolutely
 necessary, it offers a convenient way of central configuration in the Symfony
 framework.
