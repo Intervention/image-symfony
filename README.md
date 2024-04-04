@@ -51,9 +51,14 @@ The integration is now complete and it is possible to access the [ImageManager](
 via dependency injection.
 
 ```php
-use Intervention\Image\ImageManager;
+namespace App\Controller;
 
-class MyController extends AbstractController
+use Intervention\Image\ImageManager;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
+class ExampleController extends AbstractController
 {
     #[Route('/')]
     public function example(ImageManager $manager): Response
