@@ -12,7 +12,7 @@ framework.
 
 ## Requirements
 
-- Symfony >= 7
+- Symfony >= 6.4
 
 ## Installation
 
