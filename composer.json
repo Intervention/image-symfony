@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "intervention/image": "^3.5",
+        "intervention/image": "^3.7",
         "symfony/framework-bundle": "^6.4|^7"
     },
     "autoload": {
