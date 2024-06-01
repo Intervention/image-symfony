@@ -19,5 +19,6 @@ class InterventionImageExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
         $container->setParameter('intervention_image.driver', $config['driver']);
+        $container->setParameter('intervention_image.options', $config['options']);
     }
 }

@@ -5,3 +5,4 @@ services:
     autowire: true
     arguments:
       $driver: '%intervention_image.driver%'
+      $options: '%intervention_image.options%'
