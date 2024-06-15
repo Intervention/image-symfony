@@ -36,17 +36,26 @@ return [
 ## Configuration
 
 By default, the bundle is configured to use the GD library with Intervention
-Image. However, the package also offers other drivers. This can be easily
-configured by creating a file `config/packages/intervention_image.yaml` and
+Image. However, the package also offers other drivers. This and other options of the 
+library can be easily configured by creating a file `config/packages/intervention_image.yaml` and
 setting the driver class as follows. 
 
 ```yaml
 intervention_image:
   driver: Intervention\Image\Drivers\Imagick\Driver
+  options:
+    autoOrientation: true
+    decodeAnimation: true
+    blendingColor: 'ffffff'
 ```
 
 You can choose between the two supplied drivers `Intervention\Image\Drivers\Gd\Driver` and
 `Intervention\Image\Drivers\Imagick\Driver` for example.
+
+You can read more about the different options for
+[auto orientation](https://image.intervention.io/v3/modifying/effects#image-orientation-according-to-exif-data), 
+[decoding animations](https://image.intervention.io/v3/modifying/animations) and 
+[blending color](https://image.intervention.io/v3/basics/colors#transparency).
 
 ## Getting Started
 

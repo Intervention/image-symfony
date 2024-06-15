@@ -14,7 +14,14 @@ class Configuration implements ConfigurationInterface
         $treeBuilder->getRootNode()
             ->children()
                 ->scalarNode('driver')
-                ->defaultValue(GdDriver::class)
+                    ->defaultValue(GdDriver::class)
+                ->end()
+                ->arrayNode('options')->addDefaultsIfNotSet()
+                    ->children()
+                        ->booleanNode('autoOrientation')->defaultValue(true)->end()
+                        ->booleanNode('decodeAnimation')->defaultValue(true)->end()
+                        ->scalarNode('blendingColor')->defaultValue('ffffff')->end()
+                    ->end()
                 ->end()
             ->end();
 
