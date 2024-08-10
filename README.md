@@ -3,6 +3,7 @@
 
 [![Latest Version](https://img.shields.io/packagist/v/intervention/image-symfony.svg)](https://packagist.org/packages/intervention/image-symfony)
 [![Monthly Downloads](https://img.shields.io/packagist/dm/intervention/image-symfony.svg)](https://packagist.org/packages/intervention/image-symfony/stats)
+[![Support me on Ko-fi](https://raw.githubusercontent.com/Intervention/image-symfony/main/.github/images/support.svg)](https://ko-fi.com/interventionphp)
 
 This package provides an integration to setup [Intervention
 Image](https://image.intervention.io) easily to your [Symfony](https://symfony.com) framework
