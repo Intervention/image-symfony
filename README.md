@@ -48,6 +48,7 @@ intervention_image:
     autoOrientation: true
     decodeAnimation: true
     blendingColor: 'ffffff'
+    strip: false
 ```
 
 You can choose between the two supplied drivers `Intervention\Image\Drivers\Gd\Driver` and

@@ -21,6 +21,7 @@ class Configuration implements ConfigurationInterface
                         ->booleanNode('autoOrientation')->defaultValue(true)->end()
                         ->booleanNode('decodeAnimation')->defaultValue(true)->end()
                         ->scalarNode('blendingColor')->defaultValue('ffffff')->end()
+                        ->booleanNode('strip')->defaultValue(false)->end()
                     ->end()
                 ->end()
             ->end();
