@@ -67,7 +67,7 @@ via dependency injection.
 ```php
 namespace App\Controller;
 
-use Intervention\Image\ImageManager;
+use Intervention\Image\Interfaces\ImageManagerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -75,7 +75,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ExampleController extends AbstractController
 {
     #[Route('/')]
-    public function example(ImageManager $manager): Response
+    public function example(ImageManagerInterface $manager): Response
     {
         $image = $manager->read('images/example.jpg');
     }

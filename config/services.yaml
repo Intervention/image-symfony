@@ -6,3 +6,6 @@ services:
     arguments:
       $driver: '%intervention_image.driver%'
       $options: '%intervention_image.options%'
+
+  Intervention\Image\Interfaces\ImageManagerInterface:
+    alias: Intervention\Image\ImageManager
