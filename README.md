@@ -47,21 +47,20 @@ intervention_image:
   options:
     autoOrientation: true
     decodeAnimation: true
-    blendingColor: 'ffffff'
+    backgroundColor: 'ffffff'
     strip: false
 ```
 
-You can choose between the two supplied drivers `Intervention\Image\Drivers\Gd\Driver` and
-`Intervention\Image\Drivers\Imagick\Driver` for example.
+You can choose between the drivers `Intervention\Image\Drivers\Gd\Driver` and `Intervention\Image\Drivers\Imagick\Driver` for example.
 
 You can read more about the different options for
-[auto orientation](https://image.intervention.io/v3/modifying/effects#image-orientation-according-to-exif-data), 
-[decoding animations](https://image.intervention.io/v3/modifying/animations) and 
-[blending color](https://image.intervention.io/v3/basics/colors#transparency).
+[auto orientation](https://image.intervention.io/v4/basics/configuration-drivers#configuration-options), 
+[decoding animations](https://image.intervention.io/v4/basics/configuration-drivers#configuration-options) and 
+[blending color](https://image.intervention.io/v4/basics/configuration-drivers#configuration-options).
 
 ## Getting Started
 
-The integration is now complete and it is possible to access the [ImageManager](https://image.intervention.io/v3/basics/instantiation)
+The integration is now complete and it is possible to access the [ImageManager](https://image.intervention.io/v4/basics/instantiation)
 via dependency injection.
 
 ```php
@@ -77,7 +76,7 @@ class ExampleController extends AbstractController
     #[Route('/')]
     public function example(ImageManagerInterface $manager): Response
     {
-        $image = $manager->read('images/example.jpg');
+        $image = $manager->decode('images/example.jpg');
     }
 }
 ```
