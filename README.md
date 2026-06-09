@@ -24,7 +24,7 @@ composer require intervention/image-symfony
 ```
 
 After successful installation, you can activate the bundle in the file
-`config/bundes.php` of your application by inserting the following line into
+`config/bundles.php` of your application by inserting the following line into
 the array.
 
 ```php
